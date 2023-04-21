@@ -1,0 +1,98 @@
+footer{
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    height: 450px;
+    background-color: #2f2f2f;
+    
+    font-family: 'Inconsolata', monospace;
+    
+}
+    #decoracionFooter{
+        width: 80%;
+        height: 370px;
+        float: left;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+    }
+        #containerdecoracion {
+            width: 85%;
+            height: 250px;
+            color: #2f2f2f;
+        }
+            #containerdecoracion p{
+                font-size: 15px;
+            }
+            #containerdecoracion label{
+                font-size: 30px;
+            }
+            #contacto1, #contacto2, #contacto3{
+                width: auto;
+                overflow: hidden;
+                background-color: #ffffff;
+                border: #ffffff solid 1px;
+                color: #ffc905;
+            }
+
+    #menusSecu{
+        background-color: #ffc905;
+        width: 20%;
+        height: 370px;
+        float: right;
+        position: relative;
+        color: #2f2f2f;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        #lista{
+            list-style: none;
+            width: 85%;
+            text-align: left;
+            font-size: 25px;
+        }
+        .menuSecuElemento{
+            margin-top: 25px;
+            
+        }
+            .menuSecuElemento a{
+                text-decoration: none;
+                color: #2f2f2f;
+                transition: linear 0.2s;
+                cursor: pointer;
+            }
+            .menuSecuElemento a:hover{
+                transform: scale(1.2);
+                color: #ffffff;
+            }
+    #infoFooter{
+        width: 100%;
+        height: 80px;
+        padding: 0px 20px 0px 25px;
+        position: relative;
+        color: #ffffff;
+        overflow: hidden;
+    }
+        #contInfo{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+            #footerT1{
+                float: left;
+                position: relative;
+            }
+            #textFoo2{
+                width: 15%;
+                height: auto;
+                float: right;
+                text-align: right;
+            }
+                #footerT2, #footerT3{
+                    display: inline-block;
+                    margin: 0px 20px;
+                }

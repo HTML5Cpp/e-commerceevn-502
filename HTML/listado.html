@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado</title>
+
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/listado.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+    <section id="navegacion">
+        <header>
+            <h1> CurCock.</h1><p class="cursor">c</p>
+        </header>
+        <nav>
+            <a href="../index.html" class="navegadores ">
+                Inicio
+            </a>
+            <a href="galeria.html" class="navegadores">
+                Cursos online
+            </a>
+            <a href="listado.html" class="navegadores activado">
+                Listado
+            </a>
+            <a href="contacto.html" class="navegadores">
+                Contacto
+            </a>
+            <figure id="contBolsa" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+                <img src="../RECURSOS/carrito-de-compras.png" alt="bolsa de compras" id="bolsa">
+            </figure>
+            <div id="modalCa" class="NomostrarMensaje" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+                <iframe id="Iframee"
+                    title="Modal Carrito"
+                    width="600"
+                    height="400"
+                    src="carritoSencillo.html">
+                </iframe>
+            </div>
+        </nav>
+    </section>
+
+    <section id="listado">
+        <article id="desplegar">
+            <div id="tarjetas" >
+
+            </div>
+        </article>
+        <article id="agregar">
+            <label for="">Imagen: 
+                <input type="text" id="imagen" placeholder="Link IMG">
+            </label>
+            <label for="">Precio: 
+                <input type="number" id="precio" value="1" min="1" max="1000" step="0.1"> 
+            </label>
+            <label for="">Nombre: 
+                <input type="text" id="nombre" placeholder="Nombre del Curso">
+            </label>
+            <label for="">Creador: 
+                <input type="text" id="creador" placeholder="Nombre del Creador">
+            </label>
+
+            <label for="">Categoría: 
+                <select id="Elecategorias">
+                    <option value="default"> Curso</option>
+                    <option value="programacion" >Programación</option>
+                    <option value="marketing">Marketing Digital</option>
+                    <option value="diseno">Diseño</option>
+                    <option value="software">Softwares</option>
+                </select> 
+            </label><br>
+            <label for="">No. de Modulos: 
+                <input type="number" id="modulo" value="1" min="1" max="100"> 
+            </label>
+            <label for="">No. de Horas: 
+                <input type="number" id="hora" value="1" min="1" max="100" step="0.1"> 
+            </label>
+            <h4>Descripción: </h4>
+            <textarea name="message"  placeholder="Descripción del curso." class="textones" id="Descripcionn" rows="5" cols="50"></textarea>
+            <br>
+            <button class="btn-general" id="boton1">Agregar</button>
+        </articl>
+    </section>
+
+    <script src="../JS/listado.js"></script>
+    <script src="../JS/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

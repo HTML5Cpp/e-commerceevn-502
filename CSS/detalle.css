@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+/* font-family: 'Nabla', cursive; Titulos*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap');
+/* font-family: 'Inconsolata', monospace; Texto2*/
+*{
+    margin: 0;
+    padding: 0;
+} 
+#detalle{
+    margin-top: 100px;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+}
+/* ---------------------------- */
+#contBolsa{
+    width: 35px;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+#bolsa{
+    width: 100%;
+    height: auto;
+}
+/* ---------------------------- */
+#ImgProducto, #InfoProducto, #AgregarProducto{
+    padding: 25px;
+}
+#ImgProducto{
+    width: 35%;
+    height: 700px;
+    float: left;
+    text-align: center;
+}
+    .imgCurso{
+        width: 60%;
+        height: auto;
+    }
+    #modalZoom{
+        background-color: #717171;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 30px;
+        left: 35%;
+        z-index: 2;
+    }
+        #elCanvas{
+            background-color: #ffc905;
+        }
+
+
+#InfoProducto{
+    width: 40%;
+    height: 700px;
+    display: inline-block;
+}
+    #SectInsignia{
+        width: 100%;
+        min-height: 100px;
+        max-height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-bottom: 30px;
+    }
+    .contInsignia{
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        display: inline-block;
+        margin: 25px 0px ;
+    }
+        .contIMGInsigia{
+            width: 100px;
+            height: 30px;
+        }
+        .textInsignia{
+            margin-top: 26px;
+            font-size: 13px;
+            color: #2f2f2f;
+        }
+        .insignia{
+            width: 50px;
+            height: auto;
+        }
+
+    .NombreCur{
+        font-size: 50px;
+    }
+    .CreadorCur{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .PrecioCur{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #categorias{
+        width: 53%;
+        height: fit-content;
+        text-align: center;
+        color: #ffffff;
+    }
+        .adaptable{
+            background-color: #2f2f2f;
+            width: fit-content;
+            padding: 1px 5px 1px 5px;
+            border-radius: 5px;
+        }
+
+#AgregarProducto{
+    width: 25%;
+    height: 700px;
+    float: right;
+}
+    #disponilidad{
+        font-size: 25px;
+        color: #00ff48;
+    }
+    label{
+        min-width: 50px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+        #catidad{
+            width: 70px;
+            border-radius: 5px;
+            border: solid #2f2f2f 3px;
+            background-color: #2f2f2f;
+            color: #717171;
+        }
+    .btn-general{
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+        padding: 5px;
+        font-size: 25px;
+        font-weight: 400;
+        background-color: #2f2f2f;
+        color: #717171;
+        border-radius: 5px;
+        border: solid #2f2f2f 3px;
+        transition: linear 0.3s;
+    }
+    .btn-general:hover{
+        background-color: #ffc905;
+        border: solid #ffc905 3px;
+        color: #2f2f2f;
+        box-shadow: 0px 0px 12px #2f2f2f;
+    }
+
+
+
+
+
+
+
+
+
+
+    figure.zoom {
+        background-position: 50% 50%;
+        position: relative;
+        margin: 10px auto;
+        border: 5px solid #ffffff;
+        box-shadow: -1px 5px 15px #2f2f2f;
+        height: auto    ;
+        width: 100%;
+        overflow: hidden;
+        cursor: zoom-in;
+      }
+      figure.zoom img:hover {
+        opacity: 0;
+      }
+      figure.zoom img {
+        transition: opacity 0.5s;
+        display: block;
+        width: 100%;
+      }

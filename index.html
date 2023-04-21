@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/inicio.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+    <section id="navegacion">
+        <header>
+            <h1> CurCock.</h1><p class="cursor">D</p>
+        </header>
+        <nav>
+            <a href="index.html" class="navegadores activado">
+                Inicio
+            </a>
+            <a href="HTML/galeria.html" class="navegadores">
+                Cursos online
+            </a>
+            <a href="HTML/listado.html" class="navegadores">
+                Listado
+            </a>
+            <a href="HTML/contacto.html" class="navegadores">
+                Contacto
+            </a>
+            <figure id="contBolsa2" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+                <img src="RECURSOS/carrito-de-compras.png" alt="bolsa de compras" id="bolsa">
+            </figure>
+            <div id="modalCa" class="NomostrarMensaje" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+                <iframe id="Iframee"
+                    title="Modal Carrito"
+                    width="600"
+                    height="400"
+                    src="HTML/carritoSencillo.html">
+                </iframe>
+            </div>
+        </nav>
+    </section>
+    <section id="numero1">
+        <article id="elemento1">
+            <div id="ele1_1">
+                <h1 id="Titulo1">Cursos</h1>
+                <h1 id="Titulo2">Profesionales</h1>
+                
+                <p id="texto">CurCock es reconocida mundialmente como el líder del mercado en la prestación de cursos de 
+                    formación en marketing a profesionales. Nuestro experimentado 'Equipo de Expertos en Marketing' está 
+                    formado por más de 29 profesionales líderes con más de 13 años de experiencia en la promoción y publicidad 
+                    de productos o servicios para empresas. Nuestros instructores especializados han desarrollado métodos de 
+                    enseñanza únicos para ayudar a las organizaciones a implementar técnicas eficientes utilizadas para 
+                    identificar a sus clientes ideales y llamar su atención sobre los productos o servicios disponibles. </p>
+            </div>
+            <div id="ele1_2">
+                <figure id="contIMG1">
+                    <img src="./MEDIA/gummy-city.png" id="IMG1"> 
+                </figure>
+            </div>
+        </article>
+        <article id="elemento2">
+            <div id="ele2_1">
+                <figure id="contIMG2">
+                    <img src="./MEDIA/gummy-app-development.png" id="IMG2"> 
+                </figure>
+            </div>
+            <div id="ele2_2">
+                <h1 id="Titulo2_1">Descripción general </h1>
+                
+                <p id="texto">El marketing es el proceso de atraer clientes potenciales o clientes a sus productos y servicios. El marketing es el proceso de atraer clientes potenciales o clientes a sus productos y servicios. El marketing abarca todos los aspectos de las operaciones de una empresa, incluido el desarrollo de productos, los métodos de distribución, las ventas y la publicidad. El marketing como disciplina abarca todas las acciones de una    y  clientes.</p>
+            </div>
+        </article>
+    
+    </section>
+
+    <section id="numero1">
+        <article id="elemento1">
+            <div id="ele1_1">
+                <h1 id="Titulo2_1">Nuestros profesores</h1>
+                
+                <p id="texto">Son expertos en el campo del marketing y están capacitados para enseñar a los estudiantes los 
+                    conceptos y estrategias clave de esta disciplina. Nuestros profesores tienen experiencia en la industria
+                     del marketing, así como en la enseñanza y la investigación. También tienen habilidades en áreas 
+                     como análisis de datos, investigación de mercado y estrategias de comunicación. </p>
+            </div>
+            <div id="ele1_2">
+                <figure id="contIMG1">
+                    <img src="./MEDIA/gummy-blackboard.png" id="IMG1"> 
+                </figure>
+            </div>
+        </article>
+
+        <article id="elemento2">
+            <div id="ele2_1">
+                <figure id="contIMG2">
+                    <img src="./MEDIA/gummy-coding (1).png" id="IMG2"> 
+                </figure>
+            </div>
+            <div id="ele2_2">
+                <h1 id="Titulo2_1">Nuestros Cursos </h1>
+                
+                <p id="texto">Son programas de capacitación diseñados para enseñar a las personas las habilidades y estrategias necesarias para promocionar productos, servicios o marcas a través de canales digitales. Estos cursos pueden cubrir temas como la investigación de mercado en línea, la optimización de motores de búsqueda (SEO), la publicidad en redes sociales, el marketing por correo electrónico, el marketing de contenidos y el análisis de datos para medir el éxito de las campañas de marketing digital. Al completar un curso de marketing digital, los estudiantes pueden estar mejor preparados para aprovechar las oportunidades de carrera en la industria del marketing en línea.</p>
+            </div>
+            <div id="EspacioBTN">     
+                <a href="HTML/galeria.html" class="btn-general" id="botonlll">
+                    Ver Cursos
+                </a>
+            </div>
+        </article>
+    
+
+    
+    </section>
+    
+
+    <footer>
+        <div id="decoracionFooter">
+            <div id="containerdecoracion">
+                <p>¿NECESITAS AYUDA?</p>
+                <label for="">Podemos 
+                    <select id="contacto1">
+                        <option value="llamarte"> llamarte.</option>
+                        <option value="correo" >correo.</option>
+                        <option value="mensaje">mensaje.</option>
+                    </select> 
+                </label>
+                <label for="">¿Cuándo? 
+                    <select id="contacto2">
+                        <option value="hoy"> hoy.</option>
+                        <option value="mañana" >mañana.</option>
+                        <option value="otro">otro día.</option>
+                    </select> 
+                </label>
+                <label for="">Hora 
+                    <select id="contacto2">
+                        <option value="llamarte"> llamarte.</option>
+                        <option value="correo" >correo.</option>
+                        <option value="mensaje">mensaje.</option>
+                    </select> 
+                </label>
+            </div>
+        </div>
+        <div id="menusSecu">
+            <ul id="lista">
+                <li class="menuSecuElemento"><a href="#">Inicio</a></li>
+                <li class="menuSecuElemento"><a href="HTML/galeria.html">Cursos online</a></li>
+                <li class="menuSecuElemento"><a href="HTML/listado.html">Listado</a></li>
+                <li class="menuSecuElemento"><a href="HTML/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div id="infoFooter">
+            <div id="contInfo">
+                <hr>
+                <p id="footerT1">2023 curcok, inc.</p>
+                <div id="textFoo2">
+                    <p id="footerT2">términos</p>
+                    <p id="footerT3">políticas</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./JS/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

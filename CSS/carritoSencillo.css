@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+/* font-family: 'Nabla', cursive; Titulos*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap');
+/* font-family: 'Inconsolata', monospace; Texto2*/
+*{
+    margin: 0;
+    padding: 0;
+} 
+#carritoo{
+    margin-top: 100px;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+}
+/* ---------------------------- */
+#Productos{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    float: left;
+    padding: 20px;
+}
+.tarjeta{
+    background-color: #ffc905;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+    .contIMG{
+        width: 25%;
+        height: 100%;
+        float: left;
+        text-align: center;
+    }
+        .IMGEN{
+            width: 100%;
+            height: 100%;
+        }
+    .contINF{
+        width: 25%;
+        height: auto;
+        float: left;
+        padding-left: 10px;
+    }
+        .PrecioCur{
+            font-weight: bold;
+            font-size: 30px;
+        }
+    .contINF2{
+        width: 25%;
+        height: auto;
+        display: inline-block;
+    }
+    .contINF3{
+        width: 25%;
+        height: auto;
+        float: right;
+        position: relative;
+    }
+        .contEliminador{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            text-align: center;
+        }
+        .IMGEN2{
+            width: 100%;
+            height: 100%;
+        }
+#InfoPago{
+    width: 20%;
+    height: 800px;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+    #Ti{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #SubTi{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #contSub{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        font-weight: 300;
+        font-size: 24px;
+    }
+        #Sub{
+            margin-top: 20px;   
+            position: absolute;
+        }
+        #SubVal{
+            margin-top: 20px;
+            position: absolute;
+            right: 5px;
+        }
+    #contTol{
+         width: 100%;
+        height: 50px;
+        position: relative;
+        font-weight: 500;
+        font-size: 24px;
+    }
+        #Tol{
+            margin-top: 20px;   
+            position: absolute;
+        }
+        #TolVal{
+            margin-top: 20px;
+            position: absolute;
+            right: 5px;
+        }
+    

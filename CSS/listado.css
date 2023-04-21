@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+/* font-family: 'Nabla', cursive; Titulos*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap');
+/* font-family: 'Inconsolata', monospace; Texto2*/
+*{
+    margin: 0;
+    padding: 0;
+} 
+#listado{
+    margin-top: 100px;
+    position: relative;
+    min-height: 850px;
+}
+/* ---------------------------- */
+#desplegar{
+    width: 70%;
+    height: auto;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    padding: 10px;
+}
+    #tarjetas{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 25px;
+    }
+    .tarjeta{
+        width: 300px;
+        height: 400px;
+        background-color: #ffc905;
+        margin: 10px;
+        padding: 12px;
+        transition: linear 0.1s;
+        border-radius: 7px;
+        position: relative;
+        overflow: hidden;
+    }
+        .tarjeta:hover{
+            box-shadow: 0px 0px 12px #2f2f2f;
+            transform: scale(1.02);
+        }
+    .eliminador{
+        position: absolute;
+        font-weight: bold;
+        font-size: 30px;
+        top: 1px;
+        right: 15px;
+    }
+        .eliminador:hover{
+            cursor: pointer;
+        }
+    .PrecioCur{
+        font-size: 27px;
+        position: absolute;
+        right: 15px;
+    }
+    .NombreCur{
+        font-size: 27px;
+    }
+    .CreadorCur{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    #categorias{
+        width: 53%;
+        height: 30px;
+        text-align: center;
+    }
+        .adaptable{
+            background-color: #2f2f2f;
+            width: fit-content;
+            padding: 1px 5px 1px 5px;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+
+    .ModulosCur, .HorasCur, .Descripcion{
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .Descripcion{
+        width: 100%;
+        height: 18%;
+        overflow: hidden;
+    }
+    .containerIMG{
+        text-align: center;
+        width: auto;
+        height: 120px;
+    }
+    .imgCurso{
+        width: 50%;
+        height: auto;
+
+    }
+
+/* ---------------------------- */
+#agregar{
+    width: 30%;
+    height: 800px;
+    float: right;
+    
+    top: 100px;
+    right: 0px;
+    padding: 25px;
+    font-family: 'Inconsolata', monospace;
+    overflow: auto;
+    z-index: 3;
+}
+    label{
+        min-width: 50px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    #imagen, #nombre, #creador, #categoria{
+        width: 80%;
+        border-radius: 5px;
+        border: solid #2f2f2f 3px;
+        background-color: #2f2f2f;
+        color: #717171;
+    }
+        #precio, #modulo, #hora{
+            width: 70px;
+            border-radius: 5px;
+            border: solid #2f2f2f 3px;
+            background-color: #2f2f2f;
+            color: #717171;
+        }
+    .btn-general{
+        width: 200px;
+        height: auto;
+        padding: 5px;
+        font-size: 25px;
+        font-weight: 400;
+        background-color: #2f2f2f;
+        color: #717171;
+        border-radius: 5px;
+        border: solid #2f2f2f 3px;
+        transition: linear 0.3s;
+    }
+    .btn-general:hover{
+        background-color: #ffc905;
+        border: solid #ffc905 3px;
+        color: #2f2f2f;
+        box-shadow: 0px 0px 12px #2f2f2f;
+    }
+
+
+
+
+
+
+

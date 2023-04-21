@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+    <section id="navegacion">
+        <header>
+            <h1> CurCock.</h1><p class="cursor">k</p>
+        </header>
+        <nav>
+            <a href="../index.html" class="navegadores">
+                Inicio
+            </a>
+            <a href="galeria.html" class="navegadores">
+                Cursos online
+            </a>
+            <a href="listado.html" class="navegadores">
+                Listado
+            </a>
+            <a href="contacto.html" class="navegadores activado">
+                Contacto
+            </a>
+            <figure id="contBolsa" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+                <img src="../RECURSOS/carrito-de-compras.png" alt="bolsa de compras" id="bolsa">
+            </figure>
+            <div id="modalCa" class="NomostrarMensaje" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+                <iframe id="Iframee"
+                    title="Modal Carrito"
+                    width="600"
+                    height="400"
+                    src="carritoSencillo.html">
+                </iframe>
+            </div>
+        </nav>
+    </section>
+    <section id="contenedor">
+        <article id="contacto">
+            <label for="">Nombre: 
+                <input type="text" placeholder="Nombre">
+            </label>
+            <label for="">Nombre: 
+                <input type="text" placeholder="Nombre">
+            </label>
+            <label for="">Correo Electrónico: 
+                <input type="email" placeholder="@email.com">
+            </label>
+            <label for="">Asunto: 
+                <input type="text" placeholder="Información">
+            </label>
+        </article>
+    </section>
+    
+    <footer>
+        <div id="decoracionFooter">
+            <div id="containerdecoracion">
+                <p>¿NECESITAS AYUDA?</p>
+                <label for="">Podemos 
+                    <select id="contacto1">
+                        <option value="llamarte"> llamarte.</option>
+                        <option value="correo" >correo.</option>
+                        <option value="mensaje">mensaje.</option>
+                    </select> 
+                </label>
+                <label for="">¿Cuándo? 
+                    <select id="contacto2">
+                        <option value="hoy"> hoy.</option>
+                        <option value="mañana" >mañana.</option>
+                        <option value="otro">otro día.</option>
+                    </select> 
+                </label>
+                <label for="">Hora 
+                    <select id="contacto2">
+                        <option value="llamarte"> llamarte.</option>
+                        <option value="correo" >correo.</option>
+                        <option value="mensaje">mensaje.</option>
+                    </select> 
+                </label>
+            </div>
+        </div>
+        <div id="menusSecu">
+            <ul id="lista">
+                <li class="menuSecuElemento"><a href="../index.html">Inicio</a></li>
+                <li class="menuSecuElemento"><a href="galeria.html">Cursos online</a></li>
+                <li class="menuSecuElemento"><a href="listado.html">Listado</a></li>
+                <li class="menuSecuElemento"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div id="infoFooter">
+            <div id="contInfo">
+                <hr>
+                <p id="footerT1">2023 curcok, inc.</p>
+                <div id="textFoo2">
+                    <p id="footerT2">términos</p>
+                    <p id="footerT3">políticas</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Producto</title>
+
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/detalle.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+    <section id="navegacion">
+        <header>
+            <h1> CurCock.</h1>
+        </header>
+        <nav>
+            <a href="../index.html" class="navegadores">
+                Inicio
+            </a>
+            <a href="galeria.html" class="navegadores">
+                Cursos online
+            </a>
+            <a href="listado.html" class="navegadores">
+                Listado
+            </a>
+            <a href="contacto.html" class="navegadores">
+                Contacto
+            </a>
+            <figure id="contBolsa" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+                <img src="../RECURSOS/carrito-de-compras.png" alt="bolsa de compras" id="bolsa" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+            </figure>
+            <div id="modalCa" class="NomostrarMensaje" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+                <iframe id="Iframee"
+                    title="Modal Carrito"
+                    width="600"
+                    height="400"
+                    src="carritoSencillo.html">
+                </iframe>
+            </div>
+        </nav>
+    </section>
+
+    <section id="detalle">
+        <article id="ImgProducto">
+            <figure class="zoom" onmousemove="zoom(event)" id="zomzoom" >
+                <img src="../MEDIA/gummy-autumn.png" alt="Imagen Curso" id="laFoto" class="imgCurso">
+            </figure>
+            <p>Pasa el mouse encima de la imagen para aplicar zoom</p>
+
+            <!--
+            <div id="modalZoom">
+                <canvas id="elCanvas" width="500" height="500"></canvas>
+            </div>
+            --> 
+        </article>
+        <article id="InfoProducto">
+            <h4 class="NombreCur" id="nombre">Nombre</h4>
+            <h6 class="CreadorCur" id="creador">Craedo por </h6>
+            <hr>
+            <p class="PrecioCur" id="precio"> $90</p>
+            <p>Hasta 18 meses de $17.18 con costo de financiamiento.</p>
+            <div id="SectInsignia">
+                <div class="contInsignia">
+                    <figure class="contIMGInsigia">
+                        <img src="../RECURSOS/virtual.png" alt="Imagen Curso" class="insignia">
+                    </figure>
+                    <p class="textInsignia">Totalmente Virtual</p>
+                </div>
+                <div class="contInsignia">
+                    <figure class="contIMGInsigia">
+                        <img src="../RECURSOS/idioma.png" alt="Imagen Curso" class="insignia">
+                    </figure>
+                    <p class="textInsignia">En tu idioma</p>
+                </div>
+                <div class="contInsignia">
+                    <figure class="contIMGInsigia">
+                        <img src="../RECURSOS/avalado.png" alt="Imagen Curso" class="insignia">
+                    </figure>
+                    <p class="textInsignia">Avalado por Google</p>
+                </div>
+                <div class="contInsignia">
+                    <figure class="contIMGInsigia">
+                        <img src="../RECURSOS/diploma.png" alt="Imagen Curso" class="insignia">
+                    </figure>
+                    <p class="textInsignia">Certifícate</p>
+                </div>
+                <div class="contInsignia">
+                    <figure class="contIMGInsigia">
+                        <img src="../RECURSOS/conocimiento.png" alt="Imagen Curso" class="insignia">
+                    </figure>
+                    <p class="textInsignia">Incrementa tus conocimientos</p>
+                </div>
+            </div>
+            <hr>
+            <div id="categorias">
+                <div class="adaptable" id="cate">
+                    Pruebaddddddd
+                </div>
+            </div>
+            <p class="ModulosCur" id="mod">Modulos:</p>
+            <p class="HorasCur" id="hor">Horas:</p>
+            <div class="Descripcion" id="des">Descripción:</div>
+        </article>
+        <article id="AgregarProducto">
+            <p class="PrecioCur" id="preco2"> $90</p>
+            <p>Entrega GRATIS por correo electrónico hoy</p>
+            <p id="fecha"> - - </p>
+            <hr>
+            <p id="disponilidad"> Disponible </p>
+            <label for="">Cantidad: 
+                <input type="number" id="catidad" value="1" min="1" max="100">
+            </label>
+            <br>
+            <button class="btn-general" id="boton1">Agregar al Carrito</button>
+            <br>
+            <button class="btn-general" id="boton2">Comprar Ahora</button>
+        </article>
+    </section>
+    
+    <footer>
+        <div id="decoracionFooter">
+            <div id="containerdecoracion">
+                <p>¿NECESITAS AYUDA?</p>
+                <label for="">Podemos 
+                    <select id="contacto1">
+                        <option value="llamarte"> llamarte.</option>
+                        <option value="correo" >correo.</option>
+                        <option value="mensaje">mensaje.</option>
+                    </select> 
+                </label>
+                <label for="">¿Cuándo? 
+                    <select id="contacto2">
+                        <option value="hoy"> hoy.</option>
+                        <option value="mañana" >mañana.</option>
+                        <option value="otro">otro día.</option>
+                    </select> 
+                </label>
+                <label for="">Hora 
+                    <select id="contacto2">
+                        <option value="llamarte"> llamarte.</option>
+                        <option value="correo" >correo.</option>
+                        <option value="mensaje">mensaje.</option>
+                    </select> 
+                </label>
+            </div>
+        </div>
+        <div id="menusSecu">
+            <ul id="lista">
+                <li class="menuSecuElemento"><a href="../index.html">Inicio</a></li>
+                <li class="menuSecuElemento"><a href="galeria.html">Cursos online</a></li>
+                <li class="menuSecuElemento"><a href="listado.html">Listado</a></li>
+                <li class="menuSecuElemento"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div id="infoFooter">
+            <div id="contInfo">
+                <hr>
+                <p id="footerT1">2023 curcok, inc.</p>
+                <div id="textFoo2">
+                    <p id="footerT2">términos</p>
+                    <p id="footerT3">políticas</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../JS/detalle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
